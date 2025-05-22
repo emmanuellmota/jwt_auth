@@ -1,0 +1,14 @@
+generation
+
+dart run build_runner build --delete-conflicting-outputs
+
+
+continuous generation
+
+dart run build_runner watch --delete-conflicting-outputs
+
+
+
+flutter analyze
+flutter format .  # Per formattare il codice automaticamente
+flutter test      # Per eseguire i test e assicurarti che funzionino
