@@ -47,7 +47,7 @@ class JwtAuthApiClient extends Interceptor {
     );
 
     if (response.statusCode == 200) {
-      var jwtToken = JwtToken.fromJson(jsonDecode(response.data) as Map<String, dynamic>);
+      var jwtToken = JwtToken.fromJson(response.data as Map<String, dynamic>);
       // _setToken(_jwtToken!);
       return jwtToken;
     } else {
